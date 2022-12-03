@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Калькулятор</title>
+</head>
+
+<body>
+   <div class="background">
+      <h1 class="title">Матричний калькулятор</h1>
+      <hr>
+      <div class="calcArea">
+         <div class="calcArea_matrixSizeChoise">
+            Розмірність матриці
+            <select class="matrix_size">
+               <option value="2">2×2</option>
+               <option value="3" selected="selected">3×3</option>
+            </select>
+         </div>
+         <div class="calcArea_action_choise">
+            Дія над матрицею
+            <select class="action_choise">
+               <option selected="selected">Визначник</option>
+               <option>Транспонування</option>
+               <option>Обернена</option>
+               <option>Множення на число</option>
+               <option>Піднесення до степені</option>
+               <option>Множення матриць</option>
+            </select>
+         </div>
+         <div class="calcArea_matrixInput">
+            <div>A</div>
+            <input type="number" class="matrxInput">
+            <input type="number" class="matrxInput">
+            <input type="number" class="matrxInput">
+            <input type="number" class="matrxInput">
+            <input type="number" class="matrxInput">
+            <input type="number" class="matrxInput">
+            <input type="number" class="matrxInput">
+            <input type="number" class="matrxInput">
+            <input type="number" class="matrxInput">
+         </div>
+      </div>
+      <div class="resultOutput">
+         <button id="go-button">Обчислити</button>
+         <div class="resultOutput_text"> Результат:</div>
+         <div class="resultOutput_result"></div>
+      </div>
+   </div>
+
+   <script type="module" src="matrix.js"></script>
+</body>
+
+</html>
